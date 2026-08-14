@@ -1,8 +1,13 @@
+<!-- The animated banner is served through jsDelivr, not raw.githubusercontent.com:
+     raw sends CSP `sandbox`, which forces SVG secure static mode and kills animation.
+     jsDelivr is proxied by GitHub's camo, whose CSP permits it.
+     The URL is pinned to an immutable commit SHA because @main is cached ~12h and
+     goes stale. IF YOU EDIT assets/banner-*.svg, re-pin these three URLs to the new SHA. -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@main/assets/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@main/assets/banner-light.svg">
-    <img alt="Shaik Vahid — Brand Manager and Full-Stack Developer, Kurnool India" src="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@main/assets/banner-dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@c7a819bc622ff4583d0c7c3a591bd14d5d30cf8b/assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@c7a819bc622ff4583d0c7c3a591bd14d5d30cf8b/assets/banner-light.svg">
+    <img alt="Shaik Vahid — Brand Manager and Full-Stack Developer, Kurnool India" src="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@c7a819bc622ff4583d0c7c3a591bd14d5d30cf8b/assets/banner-dark.svg" width="100%">
   </picture>
 </p>
 
