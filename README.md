@@ -46,7 +46,7 @@ I work across the whole stack because a hosting company doesn't let you speciali
   <img alt="Hono" title="Hono" src="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/hono.svg" height="34">&nbsp;&nbsp;
   <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/better-auth-dark.svg"><img alt="Better Auth" title="Better Auth" src="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/better-auth.svg" height="34"></picture>&nbsp;&nbsp;
   <img alt="PostgreSQL" title="PostgreSQL" src="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/postgresql.svg" height="34">&nbsp;&nbsp;
-  <img alt="SQLite" title="SQLite" src="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/sqlite.svg" height="34">&nbsp;&nbsp;
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/sqlite-dark.svg"><img alt="SQLite" title="SQLite" src="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/sqlite.svg" height="34"></picture>&nbsp;&nbsp;
   <img alt="Supabase" title="Supabase" src="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/logos/supabase.svg" height="34">
 </p>
 
@@ -82,16 +82,11 @@ I work across the whole stack because a hosting company doesn't let you speciali
 
 ### 🛰 [dnsrobot.net](https://dnsrobot.net) &nbsp;·&nbsp; DNS propagation checker & network toolkit
 
-Designed and built end-to-end. Answers "has my DNS propagated yet?" without the guesswork.
+Designed and built end-to-end. Answers "has my DNS propagated yet?" without the guesswork — queries resolvers worldwide in real time and plots the results on an interactive map.
 
-| | |
-|:--|:--|
-| **30+** | DNS resolvers queried in real time |
-| **6** | continents covered |
-| **12** | record types supported |
-| **50+** | email-security, network-diagnostic and domain tools bundled |
+**30+** resolvers &nbsp;·&nbsp; **6** continents &nbsp;·&nbsp; **12** record types &nbsp;·&nbsp; **50+** email-security, network-diagnostic and domain tools
 
-Live at **[dnsrobot.net](https://dnsrobot.net)** — interactive world map, no signup.
+Live at **[dnsrobot.net](https://dnsrobot.net)** — no signup.
 
 <br>
 
