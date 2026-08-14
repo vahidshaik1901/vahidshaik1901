@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Shaik Vahid — Brand Manager &amp; Full-Stack Developer</title>
+  <desc id="d">Kurnool, India. Founder of SpidyHost, acquired by Hosting.com in 2023.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.6" stop-color="#12161d"/>
+      <stop offset="1" stop-color="#161b22"/>
+    </linearGradient>
+
+    <radialGradient id="glow" cx="0.80" cy="0.10" r="0.75">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.34"/>
+      <stop offset="0.45" stop-color="#22d3ee" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="0.06" cy="0.95" r="0.6">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="nameGrad" x1="-0.35" y1="0" x2="0.65" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.42" stop-color="#ffffff"/>
+      <stop offset="0.60" stop-color="#c7d2fe"/>
+      <stop offset="0.78" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#c7d2fe"/>
+      <animate attributeName="x1" values="-0.35;0.55;-0.35" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0.65;1.55;0.65" dur="9s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="ruleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6366f1"/>
+      <stop offset="0.55" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse">
+      <path d="M34 0H0V34" fill="none" stroke="#30363d" stroke-width="1" stroke-opacity="0.30"/>
+    </pattern>
+
+    <clipPath id="typeClip">
+      <rect x="86" y="208" width="0" height="40">
+        <animate attributeName="width" values="0;560" dur="1.25s" begin="0.85s" fill="freeze" calcMode="linear"/>
+      </rect>
+    </clipPath>
+
+    <path id="ring1" d="M 0,-104 A 104,44 0 1 1 0,104 A 104,44 0 1 1 0,-104"/>
+    <path id="ring2" d="M 0,-138 A 138,58 0 1 1 0,138 A 138,58 0 1 1 0,-138"/>
+  </defs>
+
+  <!-- ground -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect width="1200" height="320" fill="url(#glow)"/>
+  <rect width="1200" height="320" fill="url(#glow2)"/>
+
+  <!-- orbital node motif: 30+ resolvers, 6 continents -->
+  <g transform="translate(985,158)" opacity="0.95">
+    <g transform="rotate(-18)">
+      <use href="#ring2" xlink:href="#ring2" fill="none" stroke="#30363d" stroke-width="1.25" stroke-opacity="0.85"/>
+      <circle r="4.5" fill="#67e8f9">
+        <animateMotion dur="17s" repeatCount="indefinite" rotate="auto">
+          <mpath href="#ring2" xlink:href="#ring2"/>
+        </animateMotion>
+        <animate attributeName="opacity" values="0.35;1;0.35" dur="17s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <g transform="rotate(24)">
+      <use href="#ring1" xlink:href="#ring1" fill="none" stroke="#3a4250" stroke-width="1.25" stroke-opacity="0.9"/>
+      <circle r="3.8" fill="#a5b4fc">
+        <animateMotion dur="11s" repeatCount="indefinite" begin="-3s">
+          <mpath href="#ring1" xlink:href="#ring1"/>
+        </animateMotion>
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="11s" repeatCount="indefinite" begin="-3s"/>
+      </circle>
+    </g>
+
+    <!-- core -->
+    <circle r="30" fill="none" stroke="#6366f1" stroke-width="1.1" stroke-opacity="0.5"/>
+    <circle r="7" fill="#c7d2fe"/>
+    <circle r="7" fill="none" stroke="#67e8f9" stroke-width="1.4">
+      <animate attributeName="r" values="7;44" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.85;0" dur="3.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="7" fill="none" stroke="#6366f1" stroke-width="1.4">
+      <animate attributeName="r" values="7;44" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.85;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- static resolver nodes -->
+    <g fill="#67e8f9">
+      <circle cx="-96" cy="-52" r="2.6"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" repeatCount="indefinite"/></circle>
+      <circle cx="112" cy="-38" r="2.6"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" begin="0.7s" repeatCount="indefinite"/></circle>
+      <circle cx="-64" cy="76" r="2.6"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" begin="1.4s" repeatCount="indefinite"/></circle>
+      <circle cx="88" cy="84" r="2.6"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" begin="2.1s" repeatCount="indefinite"/></circle>
+      <circle cx="140" cy="26" r="2.2"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" begin="2.8s" repeatCount="indefinite"/></circle>
+      <circle cx="-134" cy="18" r="2.2"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" begin="3.5s" repeatCount="indefinite"/></circle>
+    </g>
+  </g>
+
+  <!-- eyebrow -->
+  <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
+    <text x="88" y="94" font-size="13" letter-spacing="3.6" fill="#7d8590" opacity="0">
+      KURNOOL, INDIA
+      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.15s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- name -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="88" y="168" font-size="70" font-weight="700" letter-spacing="-1.2" fill="url(#nameGrad)" opacity="0">
+      SHAIK VAHID
+      <animate attributeName="opacity" values="0;1" dur="0.75s" begin="0.25s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0 14;0 0" dur="0.75s" begin="0.25s" fill="freeze"/>
+    </text>
+  </g>
+
+  <!-- rule -->
+  <rect x="88" y="186" width="0" height="2.5" fill="url(#ruleGrad)" rx="1.25">
+    <animate attributeName="width" values="0;300" dur="0.7s" begin="0.7s" fill="freeze"/>
+  </rect>
+
+  <!-- role, typed once -->
+  <g clip-path="url(#typeClip)" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="88" y="238" font-size="26" font-weight="500" fill="#e6edf3" letter-spacing="0.1">Brand Manager &#183; Full-Stack Developer</text>
+  </g>
+  <rect x="88" y="212" width="2" height="30" fill="#67e8f9" opacity="0">
+    <animate attributeName="x" values="90;562" dur="1.25s" begin="0.85s" fill="freeze" calcMode="linear"/>
+    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.02;0.85;0.93;1" dur="2.6s" begin="0.85s" fill="freeze"/>
+  </rect>
+
+  <!-- subline -->
+  <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
+    <text x="89" y="274" font-size="15.5" fill="#8b949e" opacity="0">
+      Founder of SpidyHost &#8212; acquired by Hosting.com, 2023
+      <animate attributeName="opacity" values="0;1" dur="0.8s" begin="2.1s" fill="freeze"/>
+    </text>
+  </g>
+</svg>
