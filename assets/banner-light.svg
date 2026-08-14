@@ -2,6 +2,32 @@
   <title id="t">Shaik Vahid — Brand Manager &amp; Full-Stack Developer</title>
   <desc id="d">Kurnool, India. Founder of SpidyHost, acquired by Hosting.com in 2023.</desc>
 
+  <!-- Every element's *base* state is the finished, fully-visible state. Motion is layered
+       on top via CSS keyframes. If this SVG is ever served with a CSP `sandbox` directive
+       (as raw.githubusercontent.com does), the browser drops into SVG secure static mode
+       and skips all animation - the banner then renders correctly as a still image
+       instead of disappearing. Never drive visibility from an animation's end state. -->
+  <style>
+    @keyframes sv-fade   { from { opacity: 0 } to { opacity: 1 } }
+    @keyframes sv-rise   { from { opacity: 0; transform: translateY(14px) } to { opacity: 1; transform: none } }
+    @keyframes sv-rule   { from { width: 0 }   to { width: 300px } }
+    @keyframes sv-type   { from { width: 0 }   to { width: 560px } }
+    @keyframes sv-caret  { from { x: 90px }    to { x: 562px } }
+    @keyframes sv-blink  { 0% { opacity: 0 } 4% { opacity: 1 } 88% { opacity: 1 } 100% { opacity: 0 } }
+
+    .sv-eyebrow { animation: sv-fade .6s  .15s both }
+    .sv-name    { animation: sv-rise .75s .25s both }
+    .sv-rule    { animation: sv-rule .7s  .70s both }
+    .sv-clip    { animation: sv-type 1.25s .85s both }
+    .sv-caret   { animation: sv-caret 1.25s .85s both, sv-blink 2.6s .85s both }
+    .sv-sub     { animation: sv-fade .8s  2.1s both }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sv-eyebrow, .sv-name, .sv-rule, .sv-clip, .sv-sub { animation: none }
+      .sv-caret { display: none }
+    }
+  </style>
+
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#ffffff"/>
@@ -41,52 +67,52 @@
     </pattern>
 
     <clipPath id="typeClip">
-      <rect x="86" y="208" width="0" height="40">
-        <animate attributeName="width" values="0;560" dur="1.25s" begin="0.85s" fill="freeze" calcMode="linear"/>
-      </rect>
+      <rect class="sv-clip" x="86" y="208" width="560" height="40"/>
     </clipPath>
 
     <path id="ring1" d="M 0,-104 A 104,44 0 1 1 0,104 A 104,44 0 1 1 0,-104"/>
     <path id="ring2" d="M 0,-138 A 138,58 0 1 1 0,138 A 138,58 0 1 1 0,-138"/>
   </defs>
 
+  <!-- ground -->
   <rect width="1200" height="320" fill="url(#bg)"/>
   <rect width="1200" height="320" fill="url(#grid)"/>
   <rect width="1200" height="320" fill="url(#glow)"/>
   <rect width="1200" height="320" fill="url(#glow2)"/>
 
-  <g transform="translate(985,158)">
+  <!-- orbital node motif: 30+ resolvers, 6 continents -->
+  <g transform="translate(985,158)" opacity="0.95">
     <g transform="rotate(-18)">
-      <use href="#ring2" xlink:href="#ring2" fill="none" stroke="#c2cbd6" stroke-width="1.25"/>
-      <circle r="4.5" fill="#0e7490">
+      <use href="#ring2" xlink:href="#ring2" fill="none" stroke="#c2cbd6" stroke-width="1.25" stroke-opacity="1"/>
+      <circle r="4.5" fill="#0e7490" transform="translate(0,-138)">
         <animateMotion dur="17s" repeatCount="indefinite">
           <mpath href="#ring2" xlink:href="#ring2"/>
         </animateMotion>
-        <animate attributeName="opacity" values="0.35;1;0.35" dur="17s" repeatCount="indefinite"/>
       </circle>
     </g>
 
     <g transform="rotate(24)">
-      <use href="#ring1" xlink:href="#ring1" fill="none" stroke="#b6c0cd" stroke-width="1.25"/>
-      <circle r="3.8" fill="#4338ca">
+      <use href="#ring1" xlink:href="#ring1" fill="none" stroke="#b6c0cd" stroke-width="1.25" stroke-opacity="1"/>
+      <circle r="3.8" fill="#4338ca" transform="translate(0,-104)">
         <animateMotion dur="11s" repeatCount="indefinite" begin="-3s">
           <mpath href="#ring1" xlink:href="#ring1"/>
         </animateMotion>
-        <animate attributeName="opacity" values="0.4;1;0.4" dur="11s" repeatCount="indefinite" begin="-3s"/>
       </circle>
     </g>
 
-    <circle r="30" fill="none" stroke="#6366f1" stroke-width="1.1" stroke-opacity="0.55"/>
+    <!-- core -->
+    <circle r="30" fill="none" stroke="#6366f1" stroke-width="1.1" stroke-opacity="0.5"/>
     <circle r="7" fill="#4338ca"/>
-    <circle r="7" fill="none" stroke="#0891b2" stroke-width="1.4">
+    <circle r="7" fill="none" stroke="#0891b2" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="r" values="7;44" dur="3.6s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-opacity" values="0.75;0" dur="3.6s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.85;0" dur="3.6s" repeatCount="indefinite"/>
     </circle>
-    <circle r="7" fill="none" stroke="#6366f1" stroke-width="1.4">
+    <circle r="7" fill="none" stroke="#6366f1" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="r" values="7;44" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-opacity" values="0.75;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.85;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
     </circle>
 
+    <!-- static resolver nodes -->
     <g fill="#0e7490">
       <circle cx="-96" cy="-52" r="2.6"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" repeatCount="indefinite"/></circle>
       <circle cx="112" cy="-38" r="2.6"><animate attributeName="opacity" values="0.25;1;0.25" dur="4.2s" begin="0.7s" repeatCount="indefinite"/></circle>
@@ -97,37 +123,27 @@
     </g>
   </g>
 
+  <!-- eyebrow -->
   <g font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">
-    <text x="88" y="94" font-size="13" letter-spacing="3.6" fill="#656d76" opacity="0">
-      KURNOOL, INDIA
-      <animate attributeName="opacity" values="0;1" dur="0.6s" begin="0.15s" fill="freeze"/>
-    </text>
+    <text class="sv-eyebrow" x="88" y="94" font-size="13" letter-spacing="3.6" fill="#656d76">KURNOOL, INDIA</text>
   </g>
 
+  <!-- name -->
   <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
-    <text x="88" y="168" font-size="70" font-weight="700" letter-spacing="-1.2" fill="url(#nameGrad)" opacity="0">
-      SHAIK VAHID
-      <animate attributeName="opacity" values="0;1" dur="0.75s" begin="0.25s" fill="freeze"/>
-      <animateTransform attributeName="transform" type="translate" values="0 14;0 0" dur="0.75s" begin="0.25s" fill="freeze"/>
-    </text>
+    <text class="sv-name" x="88" y="168" font-size="70" font-weight="700" letter-spacing="-1.2" fill="url(#nameGrad)">SHAIK VAHID</text>
   </g>
 
-  <rect x="88" y="186" width="0" height="2.5" fill="url(#ruleGrad)" rx="1.25">
-    <animate attributeName="width" values="0;300" dur="0.7s" begin="0.7s" fill="freeze"/>
-  </rect>
+  <!-- rule -->
+  <rect class="sv-rule" x="88" y="186" width="300" height="2.5" fill="url(#ruleGrad)" rx="1.25"/>
 
+  <!-- role, typed once -->
   <g clip-path="url(#typeClip)" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
     <text x="88" y="238" font-size="26" font-weight="500" fill="#1f2328" letter-spacing="0.1">Brand Manager &#183; Full-Stack Developer</text>
   </g>
-  <rect x="88" y="212" width="2" height="30" fill="#0891b2" opacity="0">
-    <animate attributeName="x" values="90;562" dur="1.25s" begin="0.85s" fill="freeze" calcMode="linear"/>
-    <animate attributeName="opacity" values="0;1;1;1;0" keyTimes="0;0.02;0.85;0.93;1" dur="2.6s" begin="0.85s" fill="freeze"/>
-  </rect>
+  <rect class="sv-caret" x="562" y="212" width="2" height="30" fill="#0891b2" opacity="0"/>
 
+  <!-- subline -->
   <g font-family="system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">
-    <text x="89" y="274" font-size="15.5" fill="#656d76" opacity="0">
-      Founder of SpidyHost &#8212; acquired by Hosting.com, 2023
-      <animate attributeName="opacity" values="0;1" dur="0.8s" begin="2.1s" fill="freeze"/>
-    </text>
+    <text class="sv-sub" x="89" y="274" font-size="15.5" fill="#656d76">Founder of SpidyHost &#8212; acquired by Hosting.com, 2023</text>
   </g>
 </svg>

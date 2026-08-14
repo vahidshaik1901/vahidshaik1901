@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/banner-light.svg">
-    <img alt="Shaik Vahid — Brand Manager and Full-Stack Developer, Kurnool India" src="https://raw.githubusercontent.com/vahidshaik1901/vahidshaik1901/main/assets/banner-dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@main/assets/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@main/assets/banner-light.svg">
+    <img alt="Shaik Vahid — Brand Manager and Full-Stack Developer, Kurnool India" src="https://cdn.jsdelivr.net/gh/vahidshaik1901/vahidshaik1901@main/assets/banner-dark.svg" width="100%">
   </picture>
 </p>
 
